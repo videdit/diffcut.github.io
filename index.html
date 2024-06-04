@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DYTHLW1X9V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DYTHLW1X9V');
+</script>
+
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="">
+  <meta property="og:title" content=""/>
+  <meta property="og:description" content=""/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!--<meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>!-->
+
+
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!--<meta name="twitter:image" content="static/images/your_twitter_banner_image.png">!-->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Diffusion models, Unsupervised learning, Representation learning, Unsupervised segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Zero-Shot Image Segmentation via Recursive Normalized Cut on Diffusion Features</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Zero-Shot Image Segmentation via Recursive Normalized Cut on Diffusion Features</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.fr/citations?user=yQRnP7YAAAAJ&hl=fr" target="_blank">Paul Couairon</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=lhp9mRgAAAAJ&hl=en"> Mustafa Shukor</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://fr.linkedin.com/in/jean-emmanuel-haugeard" target="_blank">Jean-Emmanuel Haugeard</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://cord.isir.upmc.fr" target="_blank">Matthieu Cord</a><sup>1,3</sup>,</span>
+                <span class="author-block">
+                  <a href="https://thome.isir.upmc.fr" target="_blank">Nicolas Thome</a><sup>1</sup></span>
+
+            </div>
+            
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Sorbonne Université, <sup>2</sup>Thales SIX GTS France, <sup>3</sup>Valeo.ai<br> <!--Neurips, 2024--> </span>
+              <span class="eql-cntrb"><small></span>
+            </div> 
+
+                  
+
+                  <!-- Github link -->
+                  <!--<span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>!-->
+
+		<div class="column has-text-centered">
+                    <div class="publication-links">
+                         
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+                </span>
+
+                <!-- pdf link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+                </span> 
+                
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/PaulCouairon/DiffCut" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+                </span>
+
+  
+
+	              <!-- OpenReview link -->
+                <!--<span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file"></i>
+                  </span>
+                  <span>OpenReview</span>
+                </a>
+                </span>!-->
+
+                <!-- code link -->
+                <!--<span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-code"></i>
+                  </span>
+                  <span>Colab (Improving)</span>
+                </a>
+                </span>!-->    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video> !-->
+      <img src="static/images/main_figure.png">
+      <h2 class="subtitle has-text-centered">
+        Our <b>DiffCut</b> method exploits features from a diffusion UNet encoder in a graph-based <i>recursive</i> partitioning algorithm. Compared to DiffSeg,
+        DiffCut provides finely detailed segmentation maps that more closely align with semantic concepts.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Foundation models have emerged as powerful tools across various domains including language, vision, and multimodal tasks. While prior works have addressed unsupervised image segmentation, they significantly lag behind supervised models. In this paper, we use a diffusion UNet encoder as a foundation vision encoder and introduce DiffCut, an unsupervised zero-shot segmentation method that solely harnesses the output features from the final self-attention block. Through extensive experimentation, we demonstrate that the utilization of these diffusion features in a graph based segmentation algorithm, significantly outperforms previous state-of-the-art methods on zero-shot segmentation.
+            Specifically, we leverage a <i>recursive Normalized Cut</i> algorithm that softly regulates the granularity of detected objects and produces well-defined segmentation maps that precisely capture intricate image details. Our work highlights the remarkably accurate semantic knowledge embedded within diffusion UNet encoders that could then serve as foundation vision encoders for downstream tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="hero is-small">
+  <div class = "container is-max-desktop">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Key observation</h2>
+      <div class="level-set has-text-justified">
+            <p>
+              As good candidates for a task of unsupervised segmentation are expected to be semantically coherent, we conduct a comparison between different families of foundation models on their internal alignment at the patch-level. <br><br>
+            </p>
+      </div>
+      <img src="static/images/semantic_coherence.png" alt="key observation" class="center-image">
+      <h3>
+        <b>Qualitative results on the semantic coherence of various vision encoders.</b> We select a patch (red marker) associated to the dog in <b><span class="small-caps">Ref. Image</span></b>. Top row shows the cosine similarity heatmap between the selected patch and all patches produced by vision encoders for <b><span class="small-caps">Ref. Image</span></b>. Bottom row shows the heatmap between the selected patch in <b><span class="small-caps">Ref. Image</span></b> and all patches produced by vision encoders for <b><span class="small-caps">Target. Image</span></b>.
+      </h3><br>
+      Deriving from this observation, we assume that the <i>normalized cut</i> algorithm would provide sharp segments, each corresponding to a precise semantic concept as distinct objects would manifest as weakly connected components in a patch similarity matrix.
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class = "container is-max-desktop">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Pipeline</h2>
+      <img src="static/images/diffcut.png" alt="diffcut pipeline"/> <br><br>
+      <b>Overview of DiffCut.</b> <b>1)</b> DiffCut takes an image as input and extracts the features of the last self-attention block of a diffusion UNet encoder. <b>2)</b> These features are used to construct an affinity matrix that serves in a <i>recursive normalized cut</i> algorithm, which outputs a segmentation map at the latent spatial resolution. <b>3)</b> A high-resolution segmentation map is produced via a concept assignment mechanism on the features upsampled at the original image size. 
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class = "container is-max-desktop">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Zero-Shot Segmentation Results</h2>
+      Here we provide qualitative zero-shot segmentation results. For more analysis, please refer to the paper.<br><br>
+      <img src="static/images/quali_fig_coco.png" alt="unsupervised results"/>
+      <!--<h2 class="subtitle has-text-centered">
+          Visualization of unsupervised semantic segmentation.
+        </h2>!-->
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        <!-- Citation-->
+</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+
+  <div class="geo">
+  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ptrbWEF4MX7kXkmia_LQExTXWIbmWbTKrfmyhSVUlVY&cl=ffffff&w=a"></script> 
+  </div>
+  </body>
+  </html>
